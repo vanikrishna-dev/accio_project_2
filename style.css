@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fcaf02;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  color: #000;
+}
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.intro-text {
+  max-width: 50%;
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #fcaf02;
+  padding: 8px 55px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.intro img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.contact {
+  padding: 40px;
+}
+
+.contact h2 {
+  color: #fcaf02;
+  margin-bottom: 20px;
+}
+
+.contact input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: 1px solid #fcaf02;
+  background: transparent;
+  color: #fff;
+}
+
+.contact input:focus {
+  outline: none;
+}
+
+.contact input::placeholder {
+  color: #fcaf02;
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.submit-btn {
+  display: block;
+  margin: 20px auto;
+  background-color: #fcaf02;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.table-section {
+  padding: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fcaf02;
+  border: 1px solid #fcaf02;
+  font-weight: 100;
+  table-layout: fixed;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: left;
+  font-weight: 200;
+}
+
+th:not(:last-child),
+td:not(:last-child) {
+  border-right: 1px solid #fcaf02;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 10%;
+  padding-left: 20px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 30%;
+  padding-left: 40px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 60%;
+  padding-left: 40px;
+}
+
+/* horizontal line only below header */
+thead tr {
+  border-bottom: 1px solid #fcaf02;
+}
+
+/* remove inner horizontal lines in body */
+tbody tr {
+  border-bottom: none;
+}
+
+tfoot td {
+  background-color: #fcaf02;
+  color: #000;
+  font-weight: 300;
+  border-top: 1px solid #fcaf02;
+}
